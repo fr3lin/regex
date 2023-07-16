@@ -7,9 +7,16 @@ This RegEx selects the numbers that contain price information in euros (€) wit
 .*?(?:€\s*)?(\d+(?:[,.]\d+)?)\s*(?:€)?.*?
 ```
 
-## Sample Input:
+## Sample Inputs:
 ```html
-<span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">299,00€</span>
+1. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">299,00€</span>
+2. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">299,00 €</span>
+3. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">299.00€</span>
+4. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">299.00 €</span>
+5. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">€299,00</span>
+6. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">€ 299,00</span>
+7. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">€299.00</span>
+8. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">€ 299.00</span>
 ```
-## Output:
+## Output will always be:
 299.00
