@@ -1,2 +1,2 @@
-# regex
+# RegEx
 RegEx trials
