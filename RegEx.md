@@ -1,4 +1,4 @@
-This RegEx selects the numbers and decimal separator tfrom a price information in euros (€) within any given text.
+This RegEx selects the numbers and decimal separator from a price information in euros (€) within any given text.
 - The decimal separator can be either a comma or a dot.
 - The euro sign (€) can appear before or after the numbers.
 - The space between € sign and the numbers is not an issue.
