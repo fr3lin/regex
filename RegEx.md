@@ -19,4 +19,4 @@ This RegEx selects the numbers that contain price information in euros (€) wit
 8. <span class="a-price aok-align-center" data-a-size="xl" data-a-color="base"><span class="a-offscreen">€ 299.00</span>
 ```
 ## Output will always be:
-299.00
+299.00 or 299,00
